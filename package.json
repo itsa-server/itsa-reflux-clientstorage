@@ -1,0 +1,48 @@
+{
+  "name": "itsa-reflux-clientstorage",
+  "version": "1.0.0",
+  "description": "Mixin for Reflux that stores and loads state to the local storage during a session",
+  "author": [
+    {
+      "name": "Marco Asbreuk",
+      "email": "marco@itsasbreuk.nl"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itsa-server/itsa-reflux-clientstorage"
+  },
+  "bugs": {
+    "url": "https://github.com/itsa-server/itsa-reflux-clientstorage/issues"
+  },
+  "keywords": [
+    "itsa",
+    "itsa-server",
+    "itsa-reflux-clientstorage"
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": "*"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "istanbul": "^0.3.0",
+    "jshint": "^2.5.5",
+    "mocha": "^1.21.4"
+  },
+  "scripts": {
+    "pretest": "jshint  ./lib/*.js",
+    "test": "mocha tests/*.js  && istanbul cover $(which _mocha) -- tests/*.js",
+    "lint": "jshint ./lib/*.js"
+  },
+  "homepage": "http://itsa.github.io",
+  "maintainers": [
+    {
+      "name": "Marco Asbreuk",
+      "email": "marco@itsasbreuk.nl"
+    }
+  ],
+  "license": "New BSD"
+}
