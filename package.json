@@ -1,6 +1,6 @@
 {
   "name": "itsa-reflux-clientstorage",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Mixin for Reflux that stores and loads state to the local storage during a session",
   "author": [
     {
