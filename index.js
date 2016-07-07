@@ -43,9 +43,10 @@ var RefluxClientStorageMixin = {
             storeName = '@' + storeName;
         }
         if (this.envBrowser() && localStorage) {
-            var controller = require('itsa-client-controller');
-            var sessionTime = controller.getProps().__sessiontime;
+            var controller = require('itsa-client-controller'),
+                sessionTime;
             controller.init();
+            sessionTime = controller.getProps().__sessiontime;
             if (!isBrowserWithHistory()) {
                 // force a specific sessiontime, to prevent stateloses during navigation
                 sessionTime = Math.max(sessionTime, MIN_SESSION_BROWSERS_NO_HISTORY);
